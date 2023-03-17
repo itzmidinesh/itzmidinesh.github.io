@@ -41,3 +41,9 @@ with something of your own for that space.
 ### Dependencies
 
 - **Signika** font is used from Google fonts
+
+### Running this project
+
+- Clone this project locally
+- Open index.html using your favorite browser
+- Check out the page's functionality

@@ -1,6 +1,6 @@
 # Chingu Solo Project - Tier 1 - Tickybot Clone
 
-![TickyBot Page](https://github.com/)
+[TickyBot Clone](https://itzmidinesh.github.io/)
 
 ## Overview
 This is my attempt at cloning the [TickyBot Page](https://maknetaro.github.io/tickyBot/) using **HTML/CSS** and **JavaScript**. This is to submit for the solo project at [chingu.io](https://chingu.io)
@@ -18,29 +18,25 @@ with something of your own for that space.
 
 ### Requirements
 
-Structure
+#### Structure
 - Created the html with the required sections and the contents of each section is copied from the TickyBot Page for the cloning purpose.
 - The html contents are located in index.html
 
-Style
+#### Style
 - To meet the requirements of cloning, styling has been done accordingly
 - No CSS library has been used to meet the requirement
 - The css contents are located in styles.css
 
-Functionality
+#### Functionality
 - The smooth scrolling effect to the corresponding section from the navbar has been done in JavaScript
 - The smooth scrolling effect to the top of the window/page has been done in JavaScript*
 - 'Add to Slack' buttons are redirected to slack.com
 - The script is located in script.js
 
-Other
+#### Other
 - Readme.md has been updated.
 - Checked and made sure there are no errors in the developer console.
-- [ ] Deploy your website
-
-      Once you're done with the requirements and the console is free of 
-      errors, deploy your application. You can use services like GitHub pages, 
-      Netlify or Heroku. It's up to you! 
+- Application is deployed using [GitHub pages](https://itzmidinesh.github.io)
 
 ### Dependencies
 

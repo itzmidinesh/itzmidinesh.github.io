@@ -254,6 +254,11 @@ h3 {
     }
 }
 
+@media (max-width: 767px){
+    .service{
+        margin-bottom: 20px;
+    }
+}
 .service img {
     display:inline-block;
     vertical-align: baseline;
@@ -347,6 +352,7 @@ h3 {
     bottom: 0px;
     left: 0;
     animation: bounce-up-down 2s ease-in-out 0s infinite alternate;
+    z-index: -1;
 }
 
 .about-shape-two {
@@ -354,6 +360,7 @@ h3 {
     bottom: 10em;
     right: 0px;
     animation: bounce-up-down 2s ease-in-out 0s infinite alternate;
+    z-index: -1;
 }
 
 /* Animation keyframes */

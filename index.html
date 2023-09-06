@@ -1,30 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinesh Anbazhagan</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dinesh Anbazhagan</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;300;400;500;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Dinesh Anbazhagan</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">My Services</a>
-              <a class="nav-link" href="#">About Me</a>
-              <a class="nav-link" href="#">My Work</a>
-            </div>
-          </div>
-        </div>
-    </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	<header>
+		<!-- NavBar -->
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Dinesh Anbazhagan</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+						<a class="nav-link" href="#">My Services</a>
+						<a class="nav-link" href="#">About Me</a>
+						<a class="nav-link" href="#">My Work</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Introduction -->
+	<section class="intro" id="home">
+		<h1 class="section__title section__title--intro">
+			Hi, I am <strong>Dinesh Anbazhagan</strong>
+		</h1>
+		<p class="section__subtitle section__subtitle--intro">Web Developer | Python Enthusiast</p>
+		<img src="img/DineshIntro.jpg" alt="My photo for introducing myself" class="intro__img">
+	</section>
+
+	<!-- My services -->
+	<section class="my-services" id="services">
+		<h2 class="section__title section__title--services">What I do</h2>
+		<p class="section_title_content">From concept to code, I handle both the design and development aspects of web
+			projects. Combining creativity with technical proficiency, I ensure that every project I work on not only
+			looks
+			stunning but functions seamlessly across devices.</p>
+		<div class="services">
+			<div class="service">
+				<div class="icon">
+					<img src="img/design.png">
+					<div class="circles-box">
+						<div class="circle-one"></div>
+						<div class="circle-two"></div>
+					</div>
+				</div>
+				<h3>Design</h3>
+				<p>My design process involves crafting intuitive user interfaces with a focus on user experience. I pay
+					attention to color schemes, typography, and layouts that resonate with the brand identity and the
+					target
+					audience.</p>
+			</div>
+			<div class="service">
+				<div class="icon">
+					<img src="img/development.png">
+					<div class="circles-box">
+						<div class="circle-one"></div>
+						<div class="circle-two"></div>
+					</div>
+				</div>
+				<h3>Development</h3>
+				<p>Transforming designs into functional and interactive websites is where my development expertise comes
+					into
+					play. I'm well-versed in frontend technologies like HTML, CSS, and Bootstrap. I bring interactivity
+					to life
+					with JavaScript and ReactJS, creating dynamic and responsive user experiences. </p>
+			</div>
+			<div class="service">
+				<div class="icon">
+					<img src="img/python-development.png">
+					<div class="circles-box">
+						<div class="circle-one"></div>
+						<div class="circle-two"></div>
+					</div>
+				</div>
+				<h3>Python</h3>
+				<p>As a Python enthusiast, I also leverage Django to build robust backend solutions. My code is clean,
+					well-documented, and follows best practices to ensure maintainability and future growth.</p>
+			</div>
+		</div>
+		<a href="#work" class="btn">My Work</a>
+	</section>
+	<!-- About me -->
+	<section id="about" class="about-me-wrap">
+		<div class="about-me">
+			<h2 class="section__title section__title--about">Who I am</h2>
+			<p class="section__subtitle section__subtitle--about">Designer & developer based out of India</p>
+			<div class="about-me__body">
+				<p>Hello there! I'm Dinesh Anbazhagan, a passionate web designer and developer hailing from India. With
+					a
+					curiosity for creating beautiful and functional digital experiences, I've dedicated my time to the
+					world of
+					web development.</p>
+				<p>My journey began with a love for problem-solving and a fascination with the limitless possibilities
+					the
+					internet offers. Over the years, I've honed my skills in both design and development, allowing me to
+					craft
+					seamless and user-friendly websites from start to finish.</p>
+				<p>When I'm not immersed in lines of code, you can find me exploring my state's cuisine, spending time
+					with
+					friends or delving into the latest tech trends. My mission is to bring creativity and innovation to
+					every
+					project I undertake, creating digital experiences that leave a lasting impact.</p>
+			</div>
+			<img src="img/DienshAnbazhagan.jpg" alt="Full size image of myself" class="about-me__img">
+		</div>
+		<div class="about-shape-one">
+			<img src="img/shape/about-shapes-1.png" alt="">
+		</div>
+		<div class="banner-shape-wrap">
+			<div class="banner-shape-inner">
+				<img src="img/shape/shape1.png" alt="" class="shape shape1 rotate3d">
+				<img src="img/shape/shape2.png" alt="" class="shape shape2 rotate3d">
+				<img src="img/shape/shape3.png" alt="" class="shape shape4 rotate3d">
+				<img src="img/shape/shape4.png" alt="" class="shape shape5 rotate2d">
+			</div>
+		</div>
+		<div class="about-shape-two">
+			<img src="img/shape/about-shapes-2.png" alt="">
+		</div>
+	</section>
+
+	<!-- My work -->
+	<section class="my-work" id="work">
+		<h2 class="section__title section__title--work">My work</h2>
+		<p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+		<div class="portfolio">
+			<!-- Portfolio item 01 -->
+			<a href="#" class="portfolio__item">
+				<img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+			</a>
+			<!-- Portfolio item 02 -->
+			<a href="#" class="portfolio__item">
+				<img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+			</a>
+			<!-- Portfolio item 03 -->
+			<a href="#" class="portfolio__item">
+				<img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+			</a>
+			<!-- Portfolio item 04 -->
+			<a href="#" class="portfolio__item">
+				<img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+			</a>
+		</div>
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>

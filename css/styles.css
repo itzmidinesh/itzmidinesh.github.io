@@ -28,7 +28,7 @@
         0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 992px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -58,7 +58,6 @@ section {
 
 /* Image styles */
 img {
-    display: block;
     max-width: 100%;
 }
 
@@ -135,7 +134,7 @@ h3 {
     display: inline-block;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 992px) {
     .intro {
         display: grid;
         width: min-content;
@@ -242,11 +241,10 @@ h3 {
     text-transform: uppercase;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 992px) {
     .services {
         display: flex;
         max-width: 80%;
-        /*1000px*/
         margin-left: auto;
         margin-right: auto;
     }
@@ -257,7 +255,8 @@ h3 {
 }
 
 .service img {
-    display: inline-block;
+    display:inline-block;
+    vertical-align: baseline;
 }
 
 .service .icon {
@@ -268,11 +267,10 @@ h3 {
     text-align: center;
     height: 100px;
     line-height: 136px;
-    -webkit-transition: .5s;
     transition: .5s;
     margin-bottom: 30px;
     display: inline-block;
-    border: 1px solid #0e9d85;
+    border: 1px solid var(--clr-accent);
 }
 
 .service .icon .circles-box {
@@ -282,47 +280,41 @@ h3 {
     right: 0;
     bottom: 0;
     border-radius: 50%;
-    -webkit-animation-name: rotateme;
     animation-name: rotateme;
-    -webkit-animation-duration: 30s;
     animation-duration: 30s;
-    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
 }
 
-/* Check */
-.service .icon .circles-box .circle-one {
+.service .icon .circles-box .circle-one,
+.service .icon .circles-box .circle-two  {
     position: absolute;
-    left: 8px;
-    bottom: 8px;
     width: 12px;
     height: 12px;
     z-index: 1;
     border-radius: 50%;
-    background-color: #16e0bd;
+    background-color: var(--clr-accent);
+}
+.service .icon .circles-box .circle-one  {
+    left: 8px;
+    bottom: 8px;
 }
 
 .service .icon .circles-box .circle-two {
-    position: absolute;
     top: 8px;
     right: 8px;
-    width: 12px;
-    height: 12px;
-    z-index: 1;
-    border-radius: 50%;
-    background-color: #16e0bd;
 }
 
 .rotate3d {
-    -webkit-animation: rotate3d 2s linear infinite;
     animation: rotate3d 1s linear infinite;
+}
+
+.rotate2d {
+    animation: rotate2d 1s linear infinite;
 }
 
 .banner-shape-inner .shape {
     position: absolute;
-    -webkit-animation-duration: 3s;
     animation-duration: 3s;
 }
 
@@ -341,113 +333,66 @@ h3 {
 .banner-shape-inner .shape3 {
     position: absolute;
     left: 4em;
-    /*25%*/
     top: 15%;
-    /*20%*/
 }
 
 .banner-shape-inner .shape4 {
     position: absolute;
     right: 2%;
-    /*20%*/
     top: 35%;
-    /*32%*/
+}
+
+.about-shape-one {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    animation: bounce-up-down 2s ease-in-out 0s infinite alternate;
 }
 
 .about-shape-two {
     position: absolute;
     bottom: 10em;
-    /*0*/
     right: 0px;
-    -webkit-animation: bounce-up-down 2s ease-in-out 0s infinite alternate;
     animation: bounce-up-down 2s ease-in-out 0s infinite alternate;
 }
 
-@-webkit-keyframes rotateme {
-    from {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    to {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
+/* Animation keyframes */
 @keyframes rotateme {
     from {
-        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
 
     to {
-        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
 
 @keyframes bounce-up-down {
     0% {
-        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
     100% {
-        -webkit-transform: translateY(-30px);
         transform: translateY(-30px);
-    }
-}
-
-@-webkit-keyframes rotate3d {
-    0% {
-        -webkit-transform: rotateY(0deg);
-        transform: rotateY(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotateY(360deg);
-        transform: rotateY(360deg);
     }
 }
 
 @keyframes rotate3d {
     0% {
-        -webkit-transform: rotateY(0deg);
         transform: rotateY(0deg);
     }
 
     100% {
-        -webkit-transform: rotateY(360deg);
         transform: rotateY(360deg);
-    }
-}
-
-.rotate2d {
-    -webkit-animation: rotate2d 2s linear infinite;
-    animation: rotate2d 1s linear infinite;
-}
-
-@-webkit-keyframes rotate2d {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
     }
 }
 
 @keyframes rotate2d {
     0% {
-        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
 
     100% {
-        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
@@ -471,7 +416,7 @@ h3 {
     margin: 0px 0px 0.5em;
 }
 
-@media (min-width: 662px) {
+@media (min-width: 992px) {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 300px;
@@ -609,12 +554,4 @@ h3 {
 .footer-content p a {
     font-weight: 500;
     font-size: 2rem;
-}
-
-.about-shape-one {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    -webkit-animation: bounce-up-down 2s ease-in-out 0s infinite alternate;
-    animation: bounce-up-down 2s ease-in-out 0s infinite alternate;
 }

@@ -6,8 +6,6 @@
 
 /* Custom Properties, update these for your own design */
 :root {
-    /* --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace; */
     --ff-primary: 'Roboto', sans-serif;
     --ff-secondary: 'Jost', sans-serif;
 
@@ -18,7 +16,8 @@
     --clr-light: #fff;
     --clr-dark: #000;
     --clr-accent: #16e0bd;
-
+    --clr-bg-gray: #333;
+    --clr-highlighter: #fff4e9;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -28,7 +27,7 @@
         0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -49,11 +48,11 @@ body {
 /* Navbar styles */
 .navbar {
     background-color: var(--clr-accent);
+    width: 100%;
 }
 
 section {
     padding: 4em 2em;
-    /*5em 2em*/
 }
 
 /* Image styles */
@@ -88,7 +87,7 @@ h3 {
     font-size: var(--fs-h3)
 }
 
-
+/* Sections style */
 .section__title {
     margin-bottom: .25em;
 }
@@ -99,6 +98,8 @@ h3 {
 
 .section__title--intro strong {
     display: block;
+    color: var(--clr-accent);
+    background-color:  var(--clr-highlighter);
 }
 
 .section__subtitle {
@@ -120,31 +121,25 @@ h3 {
     margin-bottom: 2em;
 }
 
-/*  Intro section  */
-
+/*  Intro section style */
 .intro {
     position: relative;
-}
-
-.intro__img {
-    box-shadow: var(--bs);
 }
 
 .section__subtitle--intro {
     display: inline-block;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .intro {
         display: grid;
         width: min-content;
-        margin: 0 auto;
-        grid-column-gap: 2em;
-        /*1em*/
+        margin: auto;
+        grid-column-gap: 1em;
         grid-template-areas:
             "img title"
             "img subtitle";
-        grid-template-columns: min-content max-content;
+        grid-template-columns: min-content min-content;
     }
 
     .intro__img {
@@ -152,10 +147,9 @@ h3 {
         min-width: 250px;
         position: relative;
         z-index: 2;
-        border: 8px solid #fff;
+        border: 8px solid var(--clr-light);
         border-radius: 5px;
         box-shadow: var(--bs);
-        /*0px 0px 30px 0px rgba(0,0,0,0.2)*/
     }
 
     .section__subtitle--intro {
@@ -169,8 +163,14 @@ h3 {
     }
 }
 
-/*  My services section  */
+@media (max-width: 767px) {
+    .intro__img {
+        width: 100vw;
+        box-shadow: var(--bs);
+    }
+}
 
+/*  My services section style */
 .my-services {
     background-color: var(--clr-dark);
     background-image: url(../img/services-bg.jpg);
@@ -241,7 +241,7 @@ h3 {
     text-transform: uppercase;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .services {
         display: flex;
         max-width: 80%;
@@ -397,7 +397,7 @@ h3 {
     }
 }
 
-/* About me section */
+/* About me section style */
 .about-me-wrap {
     position: relative;
 }
@@ -407,26 +407,27 @@ h3 {
     margin: 0 auto;
 }
 
-.about-me__img {
-    box-shadow: var(--bs);
-}
-
 .about-me p {
     text-align: justify;
     margin: 0px 0px 0.5em;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 767px) {
+    .about-me__img {
+        width: 100vw;
+        box-shadow: var(--bs);
+    }
+}
+
+@media (min-width: 768px) {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 300px;
-        /*1fr 200px*/
         grid-template-areas:
             "title img"
             "subtitle img"
             "text img";
         grid-column-gap: 2em;
-        /*2em*/
     }
 
     .section__title--about {
@@ -450,7 +451,7 @@ h3 {
     }
 }
 
-/* My Work */
+/* My Work section style*/
 
 .my-work {
     background-color: var(--clr-dark);
@@ -488,14 +489,13 @@ h3 {
 }
 
 
-/* footer */
+/* footer style*/
 
 .footer {
-    background: #111;
+    background: var(--clr-dark);
     color: var(--clr-accent);
     text-align: center;
     padding: 2em 0;
-    /*2.5em 0*/
     font-size: var(--fs-h3);
     position: relative;
 }
@@ -531,7 +531,7 @@ h3 {
 }
 
 .footer ul.social-list>li a {
-    background: #333;
+    background: var(--clr-bg-gray);
     width: 60px;
     height: 60px;
     display: block;
@@ -544,7 +544,7 @@ h3 {
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 15px;
-    color: #fff;
+    color: var(--clr-light);
 }
 
 .footer-content p {

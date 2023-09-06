@@ -461,7 +461,7 @@ h3 {
 /* My Work section style*/
 
 .my-work {
-    background-color: var(--clr-dark);
+    background-color: var(--clr-bg-gray);
     color: var(--clr-light);
     text-align: center;
     padding: 4em 0em 0em;
